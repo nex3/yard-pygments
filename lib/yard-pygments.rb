@@ -23,6 +23,10 @@ module YARD
       @languages ||= languages!
     end
 
+    def style(style, formatter, options = {})
+      execute(["-S", style, "-f", formatter] + convert_options(options))
+    end
+
     def highlight(source, lexer, formatter, options = {})
       execute(["-l", lexer, "-f", formatter] + convert_options(options), source)
     end
