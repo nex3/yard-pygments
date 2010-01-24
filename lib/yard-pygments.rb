@@ -1,5 +1,7 @@
 require 'shellwords'
 
+YARD::Templates::Engine.register_template_path File.dirname(__FILE__) + '/../templates'
+
 module YARD
   module Templates::Helpers::HtmlSyntaxHighlightHelper
     def method_missing(name, *args, &block)
@@ -7,7 +9,7 @@ module YARD
       type = type.downcase if type
       return super unless type && Pygments.languages.include?(type)
       source = args.first
-      Pygments.highlight(source, type, :html, :nowrap => true, :noclasses => true)
+      Pygments.highlight(source, type, :html, :nowrap => true, :classprefix => "pyg-")
     end
 
     def respond_to?(name)
