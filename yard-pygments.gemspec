@@ -24,6 +24,7 @@ for a wide variety of languages using the Pygments highlighter.
      "README.md",
      "Rakefile",
      "VERSION",
+     "bin/.gitignore",
      "lib/yard-pygments.rb",
      "templates/default/fulldoc/html/pygments.erb",
      "templates/default/fulldoc/html/setup.rb",
