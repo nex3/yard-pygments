@@ -21,3 +21,12 @@ DESC
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
 end
+
+begin
+  require 'yard'
+  YARD::Rake::YardocTask.new
+rescue LoadError
+  task :yardoc do
+    abort "YARD is not available. In order to run yardoc, you must: sudo gem install yard"
+  end
+end
