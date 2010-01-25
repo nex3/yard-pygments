@@ -14,7 +14,7 @@ DESC
     gem.homepage = "http://github.com/nex3/yard-pygments"
     gem.authors = ["Nathan Weizenbaum"]
     gem.add_dependency('yard', '~> 0.5.3')
-    gem.requirements << 'pygments, 1.2.2 or greater'
+    gem.add_dependency('rb-pygments', '= 0.1.0')
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

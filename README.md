@@ -17,10 +17,9 @@ The names that will be recognized for these languages are listed under "short na
 
 ## Requirements
 
-yard-pygments requires, unsurprisingly, YARD and Pygments.
-YARD will be installed along with the gem,
-but since Pygments is written in Python,
-it needs to be installed manually.
+yard-pygments requires [rb-pygments](http://github.com/nex3/rb-pygments),
+which in turn requires Pygments itself.
+Since Pygments is written in Python, it needs to be installed manually.
 If you've got [`easy_install`](http://peak.telecommunity.com/DevCenter/EasyInstall), you can do
 
     !!!sh
