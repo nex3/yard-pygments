@@ -27,7 +27,8 @@ for a wide variety of languages using the Pygments highlighter.
      "lib/yard-pygments.rb",
      "templates/default/fulldoc/html/pygments.erb",
      "templates/default/fulldoc/html/setup.rb",
-     "templates/default/layout/html/headers.erb"
+     "templates/default/layout/html/headers.erb",
+     "yard-pygments.gemspec"
   ]
   s.homepage = %q{http://github.com/nex3/yard-pygments}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -41,14 +42,14 @@ for a wide variety of languages using the Pygments highlighter.
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<yard>, ["~> 0.5.3"])
-      s.add_runtime_dependency(%q<rb-pygments>, ["= 0.1.0"])
+      s.add_runtime_dependency(%q<rb-pygments>, [">= 0.1.0"])
     else
       s.add_dependency(%q<yard>, ["~> 0.5.3"])
-      s.add_dependency(%q<rb-pygments>, ["= 0.1.0"])
+      s.add_dependency(%q<rb-pygments>, [">= 0.1.0"])
     end
   else
     s.add_dependency(%q<yard>, ["~> 0.5.3"])
-    s.add_dependency(%q<rb-pygments>, ["= 0.1.0"])
+    s.add_dependency(%q<rb-pygments>, [">= 0.1.0"])
   end
 end
 
