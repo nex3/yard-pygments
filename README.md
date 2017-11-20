@@ -22,7 +22,8 @@ which in turn requires Pygments itself.
 Since Pygments is written in Python, it needs to be installed manually.
 If you've got [`easy_install`](http://peak.telecommunity.com/DevCenter/EasyInstall), you can do
 
-    !!!sh
-    easy_install Pygments
+```sh
+easy_install Pygments
+```
 
 Otherwise, it can be downloaded [here](http://pypi.python.org/pypi/Pygments).
